@@ -10,7 +10,6 @@ app.use(cors({
   origin: 'https://hosting-test-client.onrender.com',
   headers: {
     "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Credentials": true
 },
 }))
 
