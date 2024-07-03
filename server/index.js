@@ -9,7 +9,7 @@ app.use(express.json())
 app.use(cors({
   origin: 'https://hosting-test-client.onrender.com',
   headers: {
-    "Access-Control-Allow-Origin": "https://hosting-test-client.onrender.com",
+    "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Credentials": true
 },
 }))
