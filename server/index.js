@@ -6,9 +6,7 @@ const port = 8000
 import { getDriver } from './database.js'
 
 app.use(express.json())
-app.use(cors({
-  origin: 'https://hosting-test-client.onrender.com',
-}))
+app.use(cors())
 
 app.get('/driver/:number', async (req, res) => {
   const driver = await getDriver(req.params.number)
