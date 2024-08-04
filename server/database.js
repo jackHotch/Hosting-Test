@@ -13,7 +13,7 @@ const pool = new Pool({
   port: process.env.POSTGRES_PORT,
   database: process.env.POSTGRES_DATABASE,
   user: process.env.POSTGRES_USER,
-  ssl: SSL
+  password: process.env.POSTGRES_PASSWORD
 })
 
 pool.connect()
