@@ -7,7 +7,7 @@ function App() {
   const [name, setName] = useState('')
 
   const handleClick = () => {
-    axios.get(`https://hosting-test-server.onrender.com/driver/${number}`).then((res) => {
+    axios.get(`https://hosting-test-server.vercel.app/driver/${number}`).then((res) => {
       setName(res.data)
     })
   }
